@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+
+cd "$(dirname "$0")"
+exec ./bin/cloudflared tunnel --url http://127.0.0.1:8080 --no-autoupdate

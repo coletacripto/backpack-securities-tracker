@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Backpack Securities Tracker</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div class="brand-lockup">
+          <div class="brand-mark" aria-hidden="true">B</div>
+          <div>
+            <p class="eyebrow">Onchain equities monitor</p>
+            <h1 id="title">Backpack Securities</h1>
+          </div>
+        </div>
+        <div class="status-block">
+          <span>Last update</span>
+          <time id="updatedAt" class="timestamp" datetime=""></time>
+        </div>
+      </header>
+
+      <section class="overview">
+        <div class="intro">
+          <p id="subtitle" class="subtitle">Backpack Securities Onchain Snapshot</p>
+          <p id="description" class="description">Solana-side activity · Backpack Securities-issued equities & ETFs</p>
+        </div>
+        <article class="total-volume">
+          <p id="dailyVolumeLabel" class="metric-label"></p>
+          <strong id="dailyVolumeValue" class="total-value"></strong>
+          <span id="dailyVolumeChange" class="metric-change"></span>
+        </article>
+      </section>
+
+      <section class="metric-grid" aria-label="Headline metrics">
+        <article class="metric-card violet share-card">
+          <div>
+            <p id="solanaShareLabel" class="metric-label"></p>
+            <strong id="solanaShareValue" class="metric-value"></strong>
+            <span id="solanaShareDetail" class="metric-detail"></span>
+            <span id="solanaShareChange" class="metric-change"></span>
+          </div>
+          <div id="marketShareChart" class="market-share-chart" aria-label="Issuer market share breakdown"></div>
+        </article>
+        <article class="metric-card green">
+          <div>
+            <p id="holdersLabel" class="metric-label"></p>
+            <strong id="holdersValue" class="metric-value"></strong>
+            <span id="holdersChange" class="metric-change muted"></span>
+          </div>
+        </article>
+        <article class="metric-card gold">
+          <div>
+            <p id="cumulativeVolumeLabel" class="metric-label"></p>
+            <strong id="cumulativeVolumeValue" class="metric-value"></strong>
+            <span id="cumulativeVolumeDetail" class="metric-detail"></span>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel volume-panel">
+        <div class="section-heading">
+          <h2>24H Volume By Asset</h2>
+          <span>USD notional</span>
+        </div>
+        <div id="volumeList" class="volume-list"></div>
+      </section>
+
+      <section class="panel table-panel">
+        <div class="section-heading">
+          <h2>Asset Breakdown</h2>
+          <span>Token-level metrics</span>
+        </div>
+        <div class="asset-table" role="table" aria-label="Asset breakdown">
+          <div class="asset-row table-head" role="row">
+            <span>Asset</span>
+            <span>Price</span>
+            <span>24H %</span>
+            <span>24H Vol</span>
+            <span>Supply</span>
+            <span>Supply +/-</span>
+            <span>Holders</span>
+          </div>
+          <div id="assetRows"></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div id="notes"></div>
+        <strong id="handle"></strong>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+{
+  "updatedAt": "2026-06-28T16:00:34.314354Z",
+  "title": "Backpack Securities",
+  "subtitle": "Backpack Securities Onchain Snapshot",
+  "description": "Solana-side activity \u00b7 Backpack Securities-issued equities & ETFs",
+  "metrics": {
+    "dailyVolume": {
+      "label": "24H Backpack-issued volume",
+      "value": 14052814.39,
+      "display": "$14.1M",
+      "change": 0.0,
+      "accent": "blue"
+    },
+    "solanaShare": {
+      "label": "Backpack share of Solana tokenized equities vol",
+      "value": 76.6,
+      "display": "76.6%",
+      "detail": "$13.1M of $17.1M on 2026-06-27",
+      "change": 0,
+      "changeSuffix": "p",
+      "accent": "violet"
+    },
+    "holders": {
+      "label": "Holder accounts",
+      "value": 11567,
+      "display": "11,567",
+      "change": 0,
+      "accent": "green"
+    },
+    "cumulativeVolume": {
+      "label": "Backpack-issued cumulative volume",
+      "value": 841107848.49,
+      "display": "$841.1M",
+      "detail": "Blockworks history through 2026-06-27",
+      "accent": "gold"
+    }
+  },
+  "tokens": [
+    {
+      "symbol": "SPCX",
+      "name": "SpaceX",
+      "mint": "SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb",
+      "color": "#4aa7ff",
+      "price": "$154.54",
+      "change24h": -0.0,
+      "volume24h": "$982.2K",
+      "volumeRaw": 982159.23,
+      "supply": "75.5K",
+      "supplyChange": "0.0%",
+      "holders": "10,858",
+      "holdersChange": "+0.7%",
+      "volumeSource": "Jupiter",
+      "trades24h": 12201,
+      "volumeStatus": "indexed",
+      "holdersRaw": 10858,
+      "holdersSource": "Jupiter"
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron",
+      "mint": "MUxEsUKSMACyw5fZf68wxf5FLnZVhtU9CwH8uNNGay1",
+      "color": "#9b52ff",
+      "price": "$1.1K",
+      "change24h": 0.4,
+      "volume24h": "$11.2M",
+      "volumeRaw": 11219071.43,
+      "supply": "3.7K",
+      "supplyChange": "0.0%",
+      "holders": "391",
+      "holdersChange": "+1.4%",
+      "volumeSource": "Jupiter",
+      "trades24h": 28905,
+      "volumeStatus": "indexed",
+      "holdersRaw": 391,
+      "holdersSource": "Jupiter"
+    },
+    {
+      "symbol": "SNDK",
+      "name": "SanDisk",
+      "mint": "SNDKbwMUQvZhnLnxLduradgLHG5KrPuKwpnrkkGRhfH",
+      "color": "#ffd76b",
+      "price": "$2.1K",
+      "change24h": 0.2,
+      "volume24h": "$1.5M",
+      "volumeRaw": 1485442.58,
+      "supply": "596.49",
+      "supplyChange": "0.0%",
+      "holders": "176",
+      "holdersChange": "+0.4%",
+      "volumeSource": "Jupiter",
+      "trades24h": 5166,
+      "volumeStatus": "indexed",
+      "holdersRaw": 176,
+      "holdersSource": "Jupiter"
+    },
+    {
+      "symbol": "DRAM",
+      "name": "Roundhill Memory ETF",
+      "mint": "DRAMjSWR7HRfJKjRkvQWYL2bcaejaVhuxEcjf4pAY4Cw",
+      "color": "#22d7a8",
+      "price": "$73.72",
+      "change24h": 1.8,
+      "volume24h": "$366.1K",
+      "volumeRaw": 366141.15,
+      "supply": "10.4K",
+      "supplyChange": "0.0%",
+      "holders": "142",
+      "holdersChange": "+1.3%",
+      "volumeSource": "Jupiter",
+      "trades24h": null,
+      "volumeStatus": "indexed",
+      "holdersRaw": 142,
+      "holdersSource": "Jupiter"
+    }
+  ],
+  "share7d": [
+    {
+      "date": "2026-06-28",
+      "value": 76.6
+    },
+    {
+      "date": "2026-06-28",
+      "value": 76.6
+    },
+    {
+      "date": "2026-06-28",
+      "value": 76.6
+    },
+    {
+      "date": "2026-06-28",
+      "value": 76.6
+    },
+    {
+      "date": "2026-06-28",
+      "value": 76.6
+    },
+    {
+      "date": "2026-06-28",
+      "value": 76.6
+    },
+    {
+      "date": "2026-06-28",
+      "value": 76.6
+    }
+  ],
+  "notes": [
+    "Onchain data only. Backpack-issued volume includes only Solana onchain trading volume for configured securities.",
+    "Excludes internal balances, brokerage balances and offchain trading activity.",
+    "Sources can be connected to Birdeye, Jupiter, Solscan, Helius or another indexer."
+  ],
+  "handle": "@backpack_daily",
+  "marketShare": {
+    "source": "Blockworks",
+    "date": "2026-06-27",
+    "total": 17133778.5,
+    "totalDisplay": "$17.1M",
+    "issuers": [
+      {
+        "id": "backpack",
+        "label": "Backpack",
+        "color": "#e42a2a",
+        "volume": 13121098.6,
+        "display": "$13.1M",
+        "share": 76.58
+      },
+      {
+        "id": "xstocks",
+        "label": "xStocks",
+        "color": "#43c9b6",
+        "volume": 2507988.99,
+        "display": "$2.5M",
+        "share": 14.64
+      },
+      {
+        "id": "bstocks",
+        "label": "bStocks",
+        "color": "#dfbf42",
+        "volume": 1085972.24,
+        "display": "$1.1M",
+        "share": 6.34
+      },
+      {
+        "id": "centrifuge",
+        "label": "Centrifuge",
+        "color": "#1e6ca0",
+        "volume": 251259.15,
+        "display": "$251.3K",
+        "share": 1.47
+      },
+      {
+        "id": "ondo",
+        "label": "Ondo",
+        "color": "#6b7280",
+        "volume": 133285.91,
+        "display": "$133.3K",
+        "share": 0.78
+      },
+      {
+        "id": "prestocks",
+        "label": "PreStocks",
+        "color": "#7679f1",
+        "volume": 34108.03,
+        "display": "$34.1K",
+        "share": 0.2
+      },
+      {
+        "id": "backed-finance",
+        "label": "Backed Finance",
+        "color": "#904ea6",
+        "volume": 65.59,
+        "display": "$65.59",
+        "share": 0.0
+      }
+    ]
+  }
+}
