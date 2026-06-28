@@ -246,6 +246,68 @@ h1 {
   background: var(--issuer);
 }
 
+.issuer-history {
+  display: grid;
+  grid-template-columns: repeat(14, minmax(12px, 1fr));
+  align-items: end;
+  gap: 6px;
+  min-height: 150px;
+  padding-top: 4px;
+}
+
+.issuer-day {
+  min-width: 0;
+}
+
+.issuer-day {
+  display: grid;
+  gap: 6px;
+  align-items: end;
+}
+
+.issuer-day::before {
+  content: "";
+  display: none;
+}
+
+.issuer-day {
+  position: relative;
+}
+
+.issuer-day-stack {
+  height: 120px;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+  background: var(--surface-soft);
+}
+
+.issuer-day-stack span {
+  width: 100%;
+  height: var(--share);
+  min-width: 3px;
+  min-height: 2px;
+  background: var(--issuer);
+}
+
+.issuer-day-stack > span:first-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.issuer-day-stack > span:last-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.issuer-day em {
+  color: var(--muted);
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  white-space: nowrap;
+}
+
 .issuer-legend {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
@@ -507,6 +569,7 @@ h1 {
   padding: 16px 18px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 22px;
   box-shadow: none;
 }
@@ -518,10 +581,42 @@ h1 {
   line-height: 1.45;
 }
 
-.footer strong {
-  align-self: end;
+.footer-copy {
+  max-width: 700px;
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social-link,
+.cta-link {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.social-link {
   color: var(--blue);
+  font-weight: 850;
   font-size: 16px;
+}
+
+.cta-link {
+  padding: 9px 12px;
+  border-radius: 6px;
+  background: var(--navy);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.social-link:hover,
+.cta-link:hover {
+  text-decoration: underline;
 }
 
 .ring,
@@ -596,8 +691,8 @@ h1 {
     display: block;
   }
 
-  .footer strong {
-    display: block;
+  .footer-actions {
+    justify-content: flex-start;
     margin-top: 12px;
   }
 }

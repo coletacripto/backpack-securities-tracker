@@ -196,13 +196,17 @@ def blockworks_latest_issuer_volumes() -> dict:
     if not rows:
         raise RuntimeError("Blockworks issuer rows were empty")
 
-    latest_date = max(row["block_date"][:10] for row in rows)
-    by_issuer: dict[str, float] = {}
+    volumes_by_date: dict[str, dict[str, float]] = {}
     for row in rows:
-        if row["block_date"][:10] != latest_date:
-            continue
+        date = row["block_date"][:10]
         issuer = row["issuer_id"]
-        by_issuer[issuer] = by_issuer.get(issuer, 0.0) + float(row["volume_usd"])
+        volumes_by_date.setdefault(date, {})
+        volumes_by_date[date][issuer] = volumes_by_date[date].get(issuer, 0.0) + float(row["volume_usd"])
+
+    latest_date = max(volumes_by_date)
+    by_issuer: dict[str, float] = {}
+    for issuer, volume in volumes_by_date[latest_date].items():
+        by_issuer[issuer] = by_issuer.get(issuer, 0.0) + volume
 
     total = sum(by_issuer.values())
     backpack = by_issuer.get("backpack", 0.0)
@@ -214,6 +218,24 @@ def blockworks_latest_issuer_volumes() -> dict:
     if total <= 0:
         raise RuntimeError("Blockworks total issuer volume was zero")
 
+    history = []
+    for date in sorted(volumes_by_date)[-14:]:
+        daily_issuers = volumes_by_date[date]
+        daily_total = sum(daily_issuers.values())
+        if daily_total <= 0:
+            continue
+        history.append(
+            {
+                "date": date,
+                "total": round(daily_total, 2),
+                "backpackShare": round((daily_issuers.get("backpack", 0.0) / daily_total) * 100, 2),
+                "issuers": {
+                    issuer: round((volume / daily_total) * 100, 2)
+                    for issuer, volume in daily_issuers.items()
+                },
+            }
+        )
+
     return {
         "date": latest_date,
         "total": total,
@@ -221,6 +243,7 @@ def blockworks_latest_issuer_volumes() -> dict:
         "cumulativeBackpack": cumulative_backpack,
         "share": (backpack / total) * 100,
         "issuers": by_issuer,
+        "history": history,
     }
 
 
@@ -395,6 +418,7 @@ def update_solana_market_share(snapshot: dict) -> None:
         "total": round(market["total"], 2),
         "totalDisplay": format_money(market["total"]),
         "issuers": issuers,
+        "history": market["history"],
     }
 
 

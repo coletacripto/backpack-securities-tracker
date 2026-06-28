@@ -113,6 +113,45 @@ function renderMarketShare(data) {
     stack.append(segment);
   });
 
+  const history = document.createElement("div");
+  history.className = "issuer-history";
+
+  const colorByIssuer = new Map(issuers.map((issuer) => [issuer.id, issuer.color]));
+  const labelByIssuer = new Map(issuers.map((issuer) => [issuer.id, issuer.label]));
+  const historyDays = data.marketShare?.history || [];
+
+  historyDays.forEach((day) => {
+    const dayBar = document.createElement("div");
+    dayBar.className = "issuer-day";
+    dayBar.title = `${day.date}: Backpack ${day.backpackShare.toFixed(1)}%`;
+    const dayStack = document.createElement("div");
+    dayStack.className = "issuer-day-stack";
+
+    Object.entries(day.issuers)
+      .sort(([a], [b]) => {
+        if (a === "backpack") return -1;
+        if (b === "backpack") return 1;
+        return (labelByIssuer.get(a) || a).localeCompare(labelByIssuer.get(b) || b);
+      })
+      .forEach(([issuerId, share]) => {
+        if (share < 0.05) return;
+        const segment = document.createElement("span");
+        segment.style.setProperty("--issuer", colorByIssuer.get(issuerId) || "#94a3b8");
+        segment.style.setProperty("--share", `${Math.max(share, 1)}%`);
+        segment.title = `${labelByIssuer.get(issuerId) || issuerId}: ${share.toFixed(1)}%`;
+        dayStack.append(segment);
+      });
+
+    const label = document.createElement("em");
+    label.textContent = new Intl.DateTimeFormat("en-US", {
+      month: "2-digit",
+      day: "2-digit",
+      timeZone: "UTC",
+    }).format(new Date(`${day.date}T00:00:00Z`));
+    dayBar.append(dayStack, label);
+    history.append(dayBar);
+  });
+
   const legend = document.createElement("div");
   legend.className = "issuer-legend";
 
@@ -127,7 +166,7 @@ function renderMarketShare(data) {
     legend.append(item);
   });
 
-  container.append(stack, legend);
+  container.append(stack, history, legend);
 }
 
 function renderMetrics(data) {
@@ -244,7 +283,13 @@ function renderNotes(data) {
     item.textContent = note;
     notes.append(item);
   });
-  setText("handle", data.handle);
+  const handle = document.getElementById("handle");
+  if (handle) {
+    handle.textContent = data.handle || "@coleta_cripto";
+    handle.href = data.socialUrl || "https://x.com/Coleta_Cripto";
+  }
+  const cta = document.getElementById("backpackCta");
+  if (cta) cta.href = data.backpackUrl || "https://backpack.exchange/join/coletacripto";
 }
 
 async function loadSnapshot() {
