@@ -377,7 +377,7 @@ def update_solana_market_share(snapshot: dict) -> None:
             }
         )
 
-    snapshot["metrics"]["solanaShare"]["label"] = "Backpack share of Solana tokenized equities vol"
+    snapshot["metrics"]["solanaShare"]["label"] = "Backpack share of Solana equity flow"
     snapshot["metrics"]["solanaShare"]["value"] = share
     snapshot["metrics"]["solanaShare"]["display"] = f"{share:.1f}%"
     snapshot["metrics"]["solanaShare"]["detail"] = (
@@ -387,6 +387,7 @@ def update_solana_market_share(snapshot: dict) -> None:
     snapshot["metrics"]["solanaShare"]["changeSuffix"] = "p"
     snapshot["metrics"]["cumulativeVolume"]["value"] = round(market["cumulativeBackpack"], 2)
     snapshot["metrics"]["cumulativeVolume"]["display"] = format_money(market["cumulativeBackpack"])
+    snapshot["metrics"]["cumulativeVolume"]["label"] = "Historical Backpack flow"
     snapshot["metrics"]["cumulativeVolume"]["detail"] = f"Blockworks history through {market['date']}"
     snapshot["marketShare"] = {
         "source": "Blockworks",
@@ -464,14 +465,14 @@ def update_backpack_token_volumes(snapshot: dict) -> None:
 
     snapshot["metrics"]["dailyVolume"]["value"] = round(total_volume, 2)
     snapshot["metrics"]["dailyVolume"]["display"] = format_money(total_volume)
-    snapshot["metrics"]["dailyVolume"]["label"] = "24H Backpack-issued volume"
+    snapshot["metrics"]["dailyVolume"]["label"] = "24H tracked Backpack flow"
 
 
 def update_daily_volume_from_tokens(snapshot: dict) -> None:
     total_volume = sum(float(token.get("volumeRaw", 0)) for token in snapshot["tokens"])
     snapshot["metrics"]["dailyVolume"]["value"] = round(total_volume, 2)
     snapshot["metrics"]["dailyVolume"]["display"] = format_money(total_volume)
-    snapshot["metrics"]["dailyVolume"]["label"] = "24H Backpack-issued volume"
+    snapshot["metrics"]["dailyVolume"]["label"] = "24H tracked Backpack flow"
 
 
 def refresh_with_placeholder_data(snapshot: dict) -> dict:

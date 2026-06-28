@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Backpack Securities Tracker</title>
+    <title>Backpack Market Monitor</title>
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
@@ -12,20 +12,20 @@
         <div class="brand-lockup">
           <div class="brand-mark" aria-hidden="true">B</div>
           <div>
-            <p class="eyebrow">Onchain equities monitor</p>
+            <p class="eyebrow">Solana market monitor</p>
             <h1 id="title">Backpack Securities</h1>
           </div>
         </div>
         <div class="status-block">
-          <span>Last update</span>
+          <span>Data refresh</span>
           <time id="updatedAt" class="timestamp" datetime=""></time>
         </div>
       </header>
 
       <section class="overview">
         <div class="intro">
-          <p id="subtitle" class="subtitle">Backpack Securities Onchain Snapshot</p>
-          <p id="description" class="description">Solana-side activity · Backpack Securities-issued equities & ETFs</p>
+          <p id="subtitle" class="subtitle">Backpack Tokenized Equity Flow</p>
+          <p id="description" class="description">Daily liquidity, market share and holder metrics for Backpack-listed equities on Solana.</p>
         </div>
         <article class="total-volume">
           <p id="dailyVolumeLabel" class="metric-label"></p>
@@ -62,16 +62,16 @@
 
       <section class="panel volume-panel">
         <div class="section-heading">
-          <h2>24H Volume By Asset</h2>
-          <span>USD notional</span>
+          <h2>Asset Flow</h2>
+          <span>24H USD volume</span>
         </div>
         <div id="volumeList" class="volume-list"></div>
       </section>
 
       <section class="panel table-panel">
         <div class="section-heading">
-          <h2>Asset Breakdown</h2>
-          <span>Token-level metrics</span>
+          <h2>Token Details</h2>
+          <span>Price, supply and accounts</span>
         </div>
         <div class="asset-table" role="table" aria-label="Asset breakdown">
           <div class="asset-row table-head" role="row">
