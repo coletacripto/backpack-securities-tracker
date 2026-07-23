@@ -1,37 +1,37 @@
 {
-  "updatedAt": "2026-07-22T17:58:11.646421Z",
+  "updatedAt": "2026-07-23T18:46:08.488849Z",
   "title": "Backpack Securities",
   "subtitle": "Backpack Tokenized Equity Flow",
   "description": "Daily liquidity, market share and holder metrics for Backpack-listed equities on Solana.",
   "metrics": {
     "dailyVolume": {
       "label": "24H tracked Backpack flow",
-      "value": 17085400.69,
-      "display": "$17.1M",
-      "change": 1.7,
+      "value": 30674252.47,
+      "display": "$30.7M",
+      "change": 0.9,
       "accent": "blue"
     },
     "solanaShare": {
       "label": "Backpack share of Solana equity flow",
-      "value": 36.0,
-      "display": "36.0%",
-      "detail": "$28.5M of $79.0M on 2026-07-21",
+      "value": 26.6,
+      "display": "26.6%",
+      "detail": "$32.1M of $120.8M on 2026-07-22",
       "change": 0,
       "changeSuffix": "p",
       "accent": "violet"
     },
     "holders": {
       "label": "Holder accounts",
-      "value": 12418,
-      "display": "12,418",
+      "value": 12461,
+      "display": "12,461",
       "change": 0,
       "accent": "green"
     },
     "cumulativeVolume": {
       "label": "Historical Backpack flow",
-      "value": 1661516330.76,
+      "value": 1693665790.28,
       "display": "$1.7B",
-      "detail": "Blockworks history through 2026-07-21",
+      "detail": "Blockworks history through 2026-07-22",
       "accent": "gold"
     }
   },
@@ -41,18 +41,18 @@
       "name": "SpaceX",
       "mint": "SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb",
       "color": "#4aa7ff",
-      "price": "$118.55",
-      "change24h": -7.3,
-      "volume24h": "$5.9M",
-      "volumeRaw": 5864828.99,
-      "supply": "60.6K",
+      "price": "$117.25",
+      "change24h": -0.0,
+      "volume24h": "$9.2M",
+      "volumeRaw": 9223961.63,
+      "supply": "62.6K",
       "supplyChange": "0.0%",
-      "holders": "10,804",
-      "holdersChange": "+0.8%",
+      "holders": "10,811",
+      "holdersChange": "+0.0%",
       "volumeSource": "Jupiter",
       "trades24h": 12201,
       "volumeStatus": "indexed",
-      "holdersRaw": 10804,
+      "holdersRaw": 10811,
       "holdersSource": "Jupiter"
     },
     {
@@ -60,18 +60,18 @@
       "name": "Micron",
       "mint": "MUxEsUKSMACyw5fZf68wxf5FLnZVhtU9CwH8uNNGay1",
       "color": "#9b52ff",
-      "price": "$973.36",
-      "change24h": 0.3,
-      "volume24h": "$7.4M",
-      "volumeRaw": 7425221.34,
-      "supply": "6.8K",
+      "price": "$988.33",
+      "change24h": 2.1,
+      "volume24h": "$15.4M",
+      "volumeRaw": 15389525.62,
+      "supply": "6.4K",
       "supplyChange": "0.0%",
-      "holders": "852",
-      "holdersChange": "-0.3%",
+      "holders": "858",
+      "holdersChange": "-0.4%",
       "volumeSource": "Jupiter",
       "trades24h": 28905,
       "volumeStatus": "indexed",
-      "holdersRaw": 852,
+      "holdersRaw": 858,
       "holdersSource": "Jupiter"
     },
     {
@@ -80,17 +80,17 @@
       "mint": "SNDKbwMUQvZhnLnxLduradgLHG5KrPuKwpnrkkGRhfH",
       "color": "#ffd76b",
       "price": "$1.6K",
-      "change24h": 2.5,
-      "volume24h": "$3.4M",
-      "volumeRaw": 3394104.08,
-      "supply": "906.62",
+      "change24h": 2.9,
+      "volume24h": "$5.3M",
+      "volumeRaw": 5337611.5,
+      "supply": "898.62",
       "supplyChange": "0.0%",
-      "holders": "432",
-      "holdersChange": "+0.1%",
+      "holders": "444",
+      "holdersChange": "+1.0%",
       "volumeSource": "Jupiter",
       "trades24h": 5166,
       "volumeStatus": "indexed",
-      "holdersRaw": 432,
+      "holdersRaw": 444,
       "holdersSource": "Jupiter"
     },
     {
@@ -98,26 +98,22 @@
       "name": "Roundhill Memory ETF",
       "mint": "DRAMjSWR7HRfJKjRkvQWYL2bcaejaVhuxEcjf4pAY4Cw",
       "color": "#22d7a8",
-      "price": "$58.01",
-      "change24h": -1.9,
-      "volume24h": "$401.2K",
-      "volumeRaw": 401246.28,
+      "price": "$58.41",
+      "change24h": 0.8,
+      "volume24h": "$723.2K",
+      "volumeRaw": 723153.72,
       "supply": "20.2K",
       "supplyChange": "0.0%",
-      "holders": "330",
-      "holdersChange": "+1.4%",
+      "holders": "348",
+      "holdersChange": "+1.0%",
       "volumeSource": "Jupiter",
       "trades24h": null,
       "volumeStatus": "indexed",
-      "holdersRaw": 330,
+      "holdersRaw": 348,
       "holdersSource": "Jupiter"
     }
   ],
   "share7d": [
-    {
-      "date": "2026-07-16",
-      "value": 64.5
-    },
     {
       "date": "2026-07-17",
       "value": 67.8
@@ -141,6 +137,10 @@
     {
       "date": "2026-07-22",
       "value": 72.6
+    },
+    {
+      "date": "2026-07-23",
+      "value": 64.4
     }
   ],
   "notes": [
@@ -153,83 +153,76 @@
   "backpackUrl": "https://backpack.exchange/join/coletacripto",
   "marketShare": {
     "source": "Blockworks",
-    "date": "2026-07-21",
-    "total": 79006175.08,
-    "totalDisplay": "$79.0M",
+    "date": "2026-07-22",
+    "total": 120796269.72,
+    "totalDisplay": "$120.8M",
     "issuers": [
-      {
-        "id": "backpack",
-        "label": "Backpack",
-        "color": "#e42a2a",
-        "volume": 28452736.57,
-        "display": "$28.5M",
-        "share": 36.01
-      },
       {
         "id": "ondo",
         "label": "Ondo",
         "color": "#6b7280",
-        "volume": 22684640.3,
-        "display": "$22.7M",
-        "share": 28.71
-      },
-      {
-        "id": "xstocks",
-        "label": "xStocks",
-        "color": "#43c9b6",
-        "volume": 19011266.47,
-        "display": "$19.0M",
-        "share": 24.06
+        "volume": 36305322.0,
+        "display": "$36.3M",
+        "share": 30.06
       },
       {
         "id": "robinhood",
         "label": "Robinhood",
         "color": "#94a3b8",
-        "volume": 8156058.75,
-        "display": "$8.2M",
-        "share": 10.32
+        "volume": 35549306.68,
+        "display": "$35.5M",
+        "share": 29.43
+      },
+      {
+        "id": "backpack",
+        "label": "Backpack",
+        "color": "#e42a2a",
+        "volume": 32146633.71,
+        "display": "$32.1M",
+        "share": 26.61
+      },
+      {
+        "id": "xstocks",
+        "label": "xStocks",
+        "color": "#43c9b6",
+        "volume": 15886843.22,
+        "display": "$15.9M",
+        "share": 13.15
       },
       {
         "id": "centrifuge",
         "label": "Centrifuge",
         "color": "#1e6ca0",
-        "volume": 601043.92,
-        "display": "$601.0K",
-        "share": 0.76
+        "volume": 870402.06,
+        "display": "$870.4K",
+        "share": 0.72
       },
       {
         "id": "prestocks",
         "label": "PreStocks",
         "color": "#7679f1",
-        "volume": 100427.38,
-        "display": "$100.4K",
-        "share": 0.13
+        "volume": 37746.9,
+        "display": "$37.7K",
+        "share": 0.03
+      },
+      {
+        "id": "remora",
+        "label": "Remora",
+        "color": "#63b512",
+        "volume": 15.06,
+        "display": "$15.06",
+        "share": 0.0
       },
       {
         "id": "backed-finance",
         "label": "Backed Finance",
         "color": "#904ea6",
-        "volume": 1.69,
-        "display": "$1.69",
+        "volume": 0.08,
+        "display": "$0.08",
         "share": 0.0
       }
     ],
     "history": [
-      {
-        "date": "2026-07-08",
-        "total": 61693610.06,
-        "backpackShare": 69.87,
-        "issuers": {
-          "centrifuge": 4.26,
-          "robinhood": 0.39,
-          "xstocks": 23.68,
-          "ondo": 1.6,
-          "backed-finance": 0.0,
-          "prestocks": 0.19,
-          "backpack": 69.87,
-          "remora": 0.0
-        }
-      },
       {
         "date": "2026-07-09",
         "total": 54633428.01,
@@ -278,14 +271,14 @@
         "total": 19938610.06,
         "backpackShare": 74.53,
         "issuers": {
-          "backpack": 74.53,
-          "xstocks": 17.29,
           "ondo": 1.82,
-          "remora": 0.0,
+          "xstocks": 17.29,
+          "backpack": 74.53,
+          "robinhood": 4.68,
           "backed-finance": 0.0,
-          "centrifuge": 0.5,
+          "remora": 0.0,
           "prestocks": 1.18,
-          "robinhood": 4.68
+          "centrifuge": 0.5
         }
       },
       {
@@ -296,11 +289,11 @@
           "backpack": 65.64,
           "xstocks": 30.22,
           "ondo": 1.47,
+          "backed-finance": 0.0,
           "centrifuge": 1.52,
           "robinhood": 0.75,
-          "backed-finance": 0.0,
-          "prestocks": 0.4,
-          "remora": 0.0
+          "remora": 0.0,
+          "prestocks": 0.4
         }
       },
       {
@@ -309,12 +302,12 @@
         "backpackShare": 62.01,
         "issuers": {
           "xstocks": 29.05,
-          "backpack": 62.01,
-          "backed-finance": 0.0,
           "ondo": 1.63,
+          "backpack": 62.01,
           "centrifuge": 2.92,
-          "robinhood": 4.27,
           "prestocks": 0.11,
+          "robinhood": 4.27,
+          "backed-finance": 0.0,
           "remora": 0.0
         }
       },
@@ -323,9 +316,9 @@
         "total": 55037528.33,
         "backpackShare": 68.17,
         "issuers": {
-          "backpack": 68.17,
-          "xstocks": 25.88,
           "ondo": 1.34,
+          "xstocks": 25.88,
+          "backpack": 68.17,
           "backed-finance": 0.0,
           "prestocks": 0.1,
           "robinhood": 2.67,
@@ -341,8 +334,8 @@
           "backpack": 74.31,
           "prestocks": 0.33,
           "ondo": 0.73,
-          "backed-finance": 0.0,
           "robinhood": 1.11,
+          "backed-finance": 0.0,
           "centrifuge": 1.79
         }
       },
@@ -351,12 +344,12 @@
         "total": 70543146.59,
         "backpackShare": 75.16,
         "issuers": {
-          "xstocks": 18.85,
-          "robinhood": 3.24,
-          "ondo": 1.21,
-          "centrifuge": 1.28,
           "backpack": 75.16,
+          "xstocks": 18.85,
+          "ondo": 1.21,
           "backed-finance": 0.0,
+          "robinhood": 3.24,
+          "centrifuge": 1.28,
           "prestocks": 0.25
         }
       },
@@ -365,13 +358,13 @@
         "total": 44324674.13,
         "backpackShare": 5.43,
         "issuers": {
-          "backpack": 5.43,
           "xstocks": 2.84,
           "ondo": 89.55,
-          "backed-finance": 0.0,
+          "backpack": 5.43,
+          "centrifuge": 0.39,
           "prestocks": 0.05,
           "robinhood": 1.73,
-          "centrifuge": 0.39
+          "backed-finance": 0.0
         }
       },
       {
@@ -379,12 +372,12 @@
         "total": 322827511.2,
         "backpackShare": 1.89,
         "issuers": {
+          "xstocks": 0.86,
+          "backpack": 1.89,
           "ondo": 96.62,
           "backed-finance": 0.0,
-          "backpack": 1.89,
-          "xstocks": 0.86,
-          "prestocks": 0.02,
           "robinhood": 0.58,
+          "prestocks": 0.02,
           "centrifuge": 0.04
         }
       },
@@ -394,26 +387,41 @@
         "backpackShare": 42.8,
         "issuers": {
           "backpack": 42.8,
-          "ondo": 17.46,
-          "backed-finance": 0.0,
           "xstocks": 27.03,
+          "ondo": 17.46,
           "robinhood": 11.21,
-          "prestocks": 0.07,
-          "centrifuge": 1.42
+          "backed-finance": 0.0,
+          "centrifuge": 1.42,
+          "prestocks": 0.07
         }
       },
       {
         "date": "2026-07-21",
-        "total": 79006175.08,
-        "backpackShare": 36.01,
+        "total": 79032403.58,
+        "backpackShare": 36.0,
         "issuers": {
-          "backpack": 36.01,
-          "xstocks": 24.06,
+          "backpack": 36.0,
+          "xstocks": 24.08,
+          "ondo": 28.7,
           "backed-finance": 0.0,
           "centrifuge": 0.76,
-          "ondo": 28.71,
           "robinhood": 10.32,
           "prestocks": 0.13
+        }
+      },
+      {
+        "date": "2026-07-22",
+        "total": 120796269.72,
+        "backpackShare": 26.61,
+        "issuers": {
+          "ondo": 30.06,
+          "xstocks": 13.15,
+          "backpack": 26.61,
+          "remora": 0.0,
+          "centrifuge": 0.72,
+          "prestocks": 0.03,
+          "robinhood": 29.43,
+          "backed-finance": 0.0
         }
       }
     ]
