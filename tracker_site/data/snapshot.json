@@ -1,35 +1,35 @@
 {
-  "updatedAt": "2026-10-28T19:24:22.691660Z",
+  "updatedAt": "2026-10-29T19:28:18.102472Z",
   "title": "Backpack Securities",
   "subtitle": "Backpack Tokenized Equity Flow",
   "description": "Daily liquidity, market share and holder metrics for Backpack-listed equities on Solana.",
   "metrics": {
     "dailyVolume": {
       "label": "24H tracked Backpack flow",
-      "value": 35451957.7,
-      "display": "$35.5M",
-      "change": 1.2,
+      "value": 34922385.66,
+      "display": "$34.9M",
+      "change": -0.1,
       "accent": "blue"
     },
     "solanaShare": {
       "label": "Backpack share of Solana equity flow",
-      "value": 71.1,
-      "display": "71.1%",
-      "detail": "$28.6M of $40.3M",
-      "change": 0.47,
+      "value": 62.3,
+      "display": "62.3%",
+      "detail": "$34.5M of $55.3M",
+      "change": 0.12,
       "changeSuffix": "p",
       "accent": "violet"
     },
     "holders": {
       "label": "Holder accounts",
-      "value": 135380,
-      "display": "135,380",
+      "value": 136418,
+      "display": "136,418",
       "change": 0,
       "accent": "green"
     },
     "cumulativeVolume": {
       "label": "Historical Backpack flow",
-      "value": 3569502820.22,
+      "value": 3603967568.13,
       "display": "$3.6B",
       "detail": "Blockworks history through 2026-07-24",
       "accent": "gold"
@@ -41,18 +41,18 @@
       "name": "SpaceX",
       "mint": "SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb",
       "color": "#4aa7ff",
-      "price": "$145.14",
-      "change24h": -3.0,
-      "volume24h": "$26.6M",
-      "volumeRaw": 26567822.51,
-      "supply": "78.5K",
+      "price": "$143.74",
+      "change24h": -1.0,
+      "volume24h": "$25.8M",
+      "volumeRaw": 25822942.23,
+      "supply": "83.4K",
       "supplyChange": "0.0%",
-      "holders": "119,149",
-      "holdersChange": "+1.0%",
+      "holders": "120,160",
+      "holdersChange": "+0.2%",
       "volumeSource": "Jupiter",
       "trades24h": 12201,
       "volumeStatus": "indexed",
-      "holdersRaw": 119149,
+      "holdersRaw": 120160,
       "holdersSource": "Jupiter"
     },
     {
@@ -60,18 +60,18 @@
       "name": "Micron",
       "mint": "MUxEsUKSMACyw5fZf68wxf5FLnZVhtU9CwH8uNNGay1",
       "color": "#9b52ff",
-      "price": "$978.93",
-      "change24h": 5.3,
-      "volume24h": "$7.0M",
-      "volumeRaw": 6953421.89,
-      "supply": "6.8K",
+      "price": "$929.30",
+      "change24h": -4.8,
+      "volume24h": "$7.2M",
+      "volumeRaw": 7221375.29,
+      "supply": "6.6K",
       "supplyChange": "0.0%",
-      "holders": "6,181",
-      "holdersChange": "+1.2%",
+      "holders": "6,254",
+      "holdersChange": "+0.6%",
       "volumeSource": "Jupiter",
       "trades24h": 28905,
       "volumeStatus": "indexed",
-      "holdersRaw": 6181,
+      "holdersRaw": 6254,
       "holdersSource": "Jupiter"
     },
     {
@@ -79,18 +79,18 @@
       "name": "SanDisk",
       "mint": "SNDKbwMUQvZhnLnxLduradgLHG5KrPuKwpnrkkGRhfH",
       "color": "#ffd76b",
-      "price": "$1.4K",
-      "change24h": 7.2,
-      "volume24h": "$1.6M",
-      "volumeRaw": 1605008.81,
+      "price": "$1.3K",
+      "change24h": -4.0,
+      "volume24h": "$1.3M",
+      "volumeRaw": 1311042.49,
       "supply": "1.3K",
       "supplyChange": "0.0%",
-      "holders": "7,403",
-      "holdersChange": "-0.7%",
+      "holders": "7,366",
+      "holdersChange": "-0.4%",
       "volumeSource": "Jupiter",
       "trades24h": 5166,
       "volumeStatus": "indexed",
-      "holdersRaw": 7403,
+      "holdersRaw": 7366,
       "holdersSource": "Jupiter"
     },
     {
@@ -98,26 +98,22 @@
       "name": "Roundhill Memory ETF",
       "mint": "DRAMjSWR7HRfJKjRkvQWYL2bcaejaVhuxEcjf4pAY4Cw",
       "color": "#22d7a8",
-      "price": "$53.87",
-      "change24h": 6.6,
-      "volume24h": "$325.7K",
-      "volumeRaw": 325704.49,
-      "supply": "18.0K",
+      "price": "$51.53",
+      "change24h": -3.9,
+      "volume24h": "$567.0K",
+      "volumeRaw": 567025.65,
+      "supply": "17.9K",
       "supplyChange": "0.0%",
-      "holders": "2,647",
-      "holdersChange": "-0.1%",
+      "holders": "2,638",
+      "holdersChange": "+1.1%",
       "volumeSource": "Jupiter",
       "trades24h": null,
       "volumeStatus": "indexed",
-      "holdersRaw": 2647,
+      "holdersRaw": 2638,
       "holdersSource": "Jupiter"
     }
   ],
   "share7d": [
-    {
-      "date": "2026-10-22",
-      "value": 70.5
-    },
     {
       "date": "2026-10-23",
       "value": 64.8
@@ -141,6 +137,10 @@
     {
       "date": "2026-10-28",
       "value": 71.1
+    },
+    {
+      "date": "2026-10-29",
+      "value": 62.3
     }
   ],
   "notes": [
